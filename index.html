@@ -1,251 +1,135 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
-    <title>CV RODRIGO PERK</title>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/cv.css">
 </head>
 <body>
-    
-    <section class="inicio" id="inicio">
-        <div class="contenido-seccion">
-            <header>
-                <div class="nav-bar" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <nav id="nav" class="nav">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#resumen">Resumen</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-            </header>
-            <div class="info">
-                <h1>DIEGO LIONEL PERK</h1>
-                <h2>PROGRAMADOR WEB</h2>
-            </div>
-            <div class="foto">
-                <img src="img/foto.png" alt="">
+
+    <header class="cabecera">
+
+        <div class="perfil">
+            <img src="img/perfil.jpg" alt="Foto de perfil">
+
+            <div class="datos">
+                    <h1>Rodrigo Nicolás Velazquez</h1>
+                    <p>Programador .NET | SQL Server | VB.NET</p>
             </div>
         </div>
-    </section>
-    
-<!-- SECCION SOBRE MI -->
-<section class="sobremi" id="sobremi">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">Sobre Mi</h2>
-        <h3>Detalles personales</h3>
 
-        <p class="especial">Mi nombre es Rodrigo Lionel Perk y soy programador web.</p>
-        <p>Actualmente soy desarrollador web freelance. Si estás interesado en el desarrollo de cualquier aplicación para dispositivos móviles o web puedes contactar conmigo, ya seas una empresa o profesional. Seguro que juntos podremos poner en marcha el proyecto que tienes en mente.¡Un saludo!
+         <nav class="menu">
+        <ul>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+   
+   <main>
+
+    <section id="sobremi">
+        <h2>Sobre mí</h2>
+
+        <p>
+            Desarrollador <strong>.NET</strong> apasionado por la programación y la
+            resolución de problemas. Experiencia en el diseño e implementación de
+            sistemas de gestión, bases de datos SQL Server y desarrollo de
+            aplicaciones utilizando tecnologías Microsoft.
         </p>
+    </section>
 
-        
-    </div>
-</section>
-  <!-- SECCION HABILIDADES -->
-  <section class="habilidades" id="habilidades">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">Mis habilidades</h2>
-        <h3>Me especializo en</h3>
+    <section id="experiencia">
 
-        <div class="fila">
-            <div class="col">
-                <span>HTML/CSS</span>
-                <div class="cont-barra">
-                    <div class="barra" id="html">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                        
-                    </div>
-                    <span>98%</span>
-                </div>
-            </div>
-            <div class="col">
-                <span>JAVASCRIPT</span>
-                <div class="cont-barra">
-                    <div class="barra" id="javascript">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                       
-                    </div>
-                    <span>70%</span>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="col">
-                <span>WORDPRESS</span>
-                <div class="cont-barra">
-                    <div class="barra" id="wordpress">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                       
-                    </div>
-                    <span>90%</span>
-                </div>
-            </div>
-            <div class="col">
-                <span>PHOTOSHOP</span>
-                <div class="cont-barra">
-                    <div class="barra" id="photoshop">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                       
-                    </div>
-                    <span>85%</span>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="col">
-                <span>PHP</span>
-                <div class="cont-barra">
-                    <div class="barra" id="php">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                       
-                    </div>
-                    <span>95%</span>
-                </div>
-            </div>
-            <div class="col">
-                <span>ILUSTRATOR</span>
-                <div class="cont-barra">
-                    <div class="barra" id="ilustrator">
-                        <!-- mediante javascript luego genereremos 17 barritas con clase e -->
-                       
-                    </div>
-                    <span>75%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- <!-- SECCION RESUMEN -->
- <section class="resumen" id="resumen">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">Resumen</h2>
-        <h3>Mi preparación y experiencia</h3>
-        <div class="info">
-            <div class="col">
-                <span class="titulo">Educación</span>
-                <table>
-                    <tr>
-                        <td class="datos">
-                            <h3>2014</h3>
-                        </td>
-                        <td rowspan="2" class="descripcion">
-                            Curso de Diseño Web con CSS3.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>CSS3</h4>
-                            <p>Fundación General de la Universidad de La Laguna.</p>
-                            <span class="promedio">8.9 PG</span>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td class="datos">
-                            <h3>2018</h3>
-                        </td>
-                        <td rowspan="2" class="descripcion">
-                            Curso de Programación de Apps Móviles.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Programador FS</h4>
-                            <p>Udemy Cursos</p>
-                            <span class="promedio">8.9 PG</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col">
-                <span class="titulo">Experiencia Laboral</span>
-                <table>
-                <tr>
-                    <td class="datos">
-                        <h3>2013 - Actualidad</h3>
-                    </td>
-                    <td rowspan="2" class="descripcion">
-                        Desarrollo de aplicaciones/páginas web y dispositivos móviles.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4>Open Canarias S.L.</h4>
-                        <p>Analista/programador</p>
-                       
-                    </td>
-                </tr>
-            </table>
-                <table>
-                    <tr>
-                        <td class="datos">
-                            <h3>2 Años</h3>
-                        </td>
-                        <td rowspan="2" class="descripcion">
-                            Programador en varios proyectos .Net para varias administraciones del Gobierno de Canarias realizando labores de desarrollo y mantenimiento de aplicaciones.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Personal Software System S.L.</h4>
-                            <p>Programador</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
- <!-- SECCION CONTACTO -->
- <section class="contacto" id="contacto">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">Contacto</h2>
-        <h3>Ponte en contacto ahora mismo!</h3>
-        <div class="fila">
-            <form action="#" target="" method="get" name="formDatosPersonales">
-            
-                <label for="email" >Email</label>
-                <input type="email" name="email" id="email" placeholder="email" />
-            
-                <label for="asunto">Asunto</label>
-                <input type ="text" name="asunto" id="asunto" placeholder="titulo de la consulta" />
-            
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300" ></textarea>
-                
-                <input type="submit" name="enviar" value="Enviar Datos" onclick="valida_envia()"/>
-    
-            </form>
+        <h2>Experiencia</h2>
+
+        <div>
+            <h3>Programador Freelance</h3>
+            <span>2013 - Actualidad</span>
+
+            <p>
+                Desarrollo de aplicaciones web, sistemas de gestión y bases de
+                datos SQL Server para distintos clientes.
+            </p>
         </div>
 
-        <div class="fila">
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-phone"></i> Teléfono
-                </h2>
-                <span class="info-contacto">0223 - 654656655</span>
-            </div>
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-envelope"></i> Correo
-                </h2>
-                <span class="info-contacto">RodrigoLionelPerk@gmail.com</span>
-            </div>
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-globe"></i> Página Web
-                </h2>
-                <span class="info-contacto">rockorn86.github.io</span>
-            </div>
+        <div>
+            <h3>Analista / Programador</h3>
+            <span>2011 - 2013</span>
+
+            <p>
+                Desarrollo y mantenimiento de aplicaciones .NET para organismos
+                públicos, utilizando SQL Server y tecnologías Microsoft.
+            </p>
         </div>
+
+    </section>
+    <div id="contenedor-info">
+
+       <section id="educacion">
+            <h2>Educación</h2>
+
+            <h3>Analista de Sistemas</h3>
+            <p>Instituto Argentino de la Empresa</p>
+            <p>2004 - 2010</p>
+
+            <h3>Bachiller Economía y Gestión</h3>
+            <p>Instituto Jesús Obrero</p>
+            <p>2000 - 2003</p>
+
+            <h3>Colegio Primario</h3>
+            <p>Escuela N° 18</p>
+            <p>1991 - 1999</p>
+        </section>
+
+        <section id="conocimientos">
+            <h2>Conocimientos</h2>
+
+            <ul>
+                <li>VB.NET</li>
+                <li>ASP.NET Core MVC</li>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </section>
     </div>
-</section>
-<script src="js/function.js"></script>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <h3>SGCGestion</h3>
+        <p>Aplicacion de Escritorio que permite gestionar artículos, clientes, salida de mercadería, presupuestos de mercadería, aumento de precios, lista de precios minorista y mayoristas.</p>
+        <p>Desarrollada en VB.NET 2008 con sql server 2008 en el año 2011</p>
+        <p>Referencia: Carpintería “Aberturas 180” Av. Arturo Alió 2357. Tel: 0223 478-5001.</p>
+        <h3>SGRGestion</h3>
+        <p>Aplicacion de Escritorio gestiona los horarios de guardias de los prefectos y asigna una o dos raciones según la cantidad de horas trabajadas. Al final de cada mes, genera un informe con el total de raciones por empleado para su correspondiente reintegro.</p>
+        <p>Desarrollada en VB.NET 2008 con sql server 2008 en el año 2013</p>
+        <p>Referencia: “Prefectura Naval Argentina sede Mar del Plata” Av. CEAO S/N “(B7608).Tel: 2234245496.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> rodrigo@email.com</p>
+
+        <p><strong>Teléfono:</strong> +54 223 123-4567</p>
+
+        <p><strong>Ubicación:</strong> Mar del Plata, Buenos Aires</p>
+
+        <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/rodrigo-velazquez-30143047">Linkedin</a></p>
+
+         
+    </section>
+
+</main>
 </body>
 </html>
